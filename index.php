@@ -14,7 +14,7 @@
 		require_once('db_con.php');	
 		$sql = 'SELECT id, pwhash FROM users WHERE username = ?';
 		$stmt = $con->prepare($sql);
-		$stmt->bind_param(s, $un);
+		$stmt->bind_param('s', $un);
 		$stmt->execute();
 		$stmt->bind_result($id, $pwhash);
 

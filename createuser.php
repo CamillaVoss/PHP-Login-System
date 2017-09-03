@@ -14,7 +14,7 @@
 		require_once('db_con.php');
 		$exists_sql = 'SELECT id FROM users WHERE username = ?';
 		$stmt = $con->prepare($exists_sql);
-		$stmt->bind_param(s, $un);
+		$stmt->bind_param('s', $un);
 		$stmt->execute();
 		$stmt->bind_result($id);
 		while ($stmt->fetch()) {}
@@ -29,7 +29,7 @@
 			// Inserts username and hashed password in db table
 			$sql = 'INSERT INTO users (username, pwhash) VALUES (?, ?)';
 			$stmt = $con->prepare($sql);
-			$stmt->bind_param(ss, $un, $pw);
+			$stmt->bind_param('ss', $un, $pw);
 			$stmt->execute();
 
 			// If creating user is a succes, user is redirected to login page
