@@ -48,7 +48,7 @@
 	<body style="margin: 50px auto; text-align: center;">
 
 	<h1>Welcome to The More You Know</h1>
-	<h2>Login to expand you knowledge</h2>
+	<h2>Login to expand your knowledge</h2>
 	</br>
 	</br>
 	<?php

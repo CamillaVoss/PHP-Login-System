@@ -54,7 +54,7 @@
 	</head>
 	<body style="margin: 50px auto; text-align: center;">
 		<h1>Welcome to The More You Know</h1>
-		<h2>Create a user to expand you knowledge</h2>
+		<h2>Create a user to expand your knowledge</h2>
 		</br>
 		<?php
 			if ($exists) {
